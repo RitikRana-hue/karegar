@@ -58,3 +58,4 @@ This portfolio can be deployed on various platforms:
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 # karegar
+# karegar git init git add README.md git commit -m first commit
