@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { ArrowUpRight, Code, Home as HomeIcon, Mail, Palette, User, Zap, Briefcase, ExternalLink, X, Linkedin, Github } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
@@ -361,7 +362,9 @@ export default function Home() {
                 key={project.id}
                 className="project-card animate-slide-up"
                 style={{ animationDelay: `${(index + 1) * 0.1}s` }}
-                onClick={() => window.location.href = `/work/${project.id}`}
+                onClick={() => {
+                  window.location.href = `/work/${project.id}`;
+                }}
               >
                 <div className="relative overflow-hidden">
                   <Image
