@@ -1039,14 +1039,14 @@ a:focus-visible {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(26, 26, 26, 0.95);
+  background: rgba(26, 26, 26, 0.99);
   backdrop-filter: blur(20px);
   border-radius: 1.5rem;
   padding: 2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   display: flex;
   gap: 3rem;
-  min-width: 320px;
+  min-width: 480px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 10;
 }
@@ -1054,6 +1054,10 @@ a:focus-visible {
 .about-stat {
   text-align: center;
   flex: 1;
+}
+
+.about-stat:last-child {
+  min-width: 125px;
 }
 
 .about-stat-number {

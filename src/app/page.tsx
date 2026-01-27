@@ -32,107 +32,49 @@ export default function Home() {
 
   const projects = [
     {
-      id: 'learnlogicify',
-      title: 'Learnlogicify Landing Page',
-      slug: 'learnlogicify-landing-page',
-      shortDescription: 'Modern educational platform with clean design and intuitive user experience',
-      fullDescription: 'A comprehensive educational platform built with modern web technologies. Features include interactive course modules, student progress tracking, responsive design, and seamless user experience. The platform integrates with various learning management systems and provides real-time analytics for educators. Built with performance and accessibility in mind, it supports multiple languages and provides a smooth learning experience across all devices.',
-      image: 'https://picsum.photos/seed/learnlogicify/600/400.jpg',
+      id: 'smart-city-solution',
+      title: 'NodesIO',
+      slug: 'smart-city-solution',
+      shortDescription: 'NodesIO is a smart city infrastructure platform that helps governments monitor real-world data to keep cities cleaner.',
+      fullDescription: 'NodesIO is a smart city infrastructure solution designed to collect real-world data from the city and reflect it on a centralized dashboard connected with government authorities. The platform enables live monitoring, better decision-making, and operational efficiency, helping reduce waste by up to 70% and making cities more sustainable.',
+      image: '/images/nodesiohome.jpeg',
       images: [
-        'https://picsum.photos/seed/learnlogicify/800/600.jpg',
-        'https://picsum.photos/seed/learnlogicify2/800/600.jpg',
-        'https://picsum.photos/seed/learnlogicify3/800/600.jpg'
+        '/images/nodesiohome.jpeg',
+        '/images/nodesio1.jpeg',
+        '/images/nodesio2.jpeg'
       ],
-      technologies: ['React', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Node.js', 'MongoDB', 'Vercel'],
-      liveUrl: 'https://learnlogicify-demo.vercel.app',
-      githubUrl: 'https://github.com/karigar/learnlogicify',
+      technologies: ['Next.js', 'React', 'Tailwind CSS', 'Node.js', 'MongoDB', 'Firebase'],
+      liveUrl: 'https://www.nodesio.in/',
+      githubUrl: '',
       features: [
-        'Responsive design for all devices',
-        'Interactive course modules with video support',
-        'Real-time progress tracking system',
-        'Advanced analytics dashboard',
-        'Multi-language support (5+ languages)',
-        'Dark/Light theme toggle',
-        'Offline course download capability',
-        'Social learning features'
+        'Real-world data monitoring',
+        'Government-connected admin dashboard',
+        'Mobile-friendly responsive UI',
+        'Web-based smart city application',
+        'Live operational insights'
       ]
     },
     {
-      id: 'winzee',
-      title: 'Winzee Web Chat Application',
-      slug: 'winzee-web-chat-application',
-      shortDescription: 'Real-time chat application with advanced features and beautiful UI',
-      fullDescription: 'A sophisticated real-time chat application built with modern web technologies. Features include instant messaging, file sharing, group chats, emoji reactions, and voice/video calling capabilities. The application supports multiple chat rooms, provides end-to-end encryption for secure communication, and includes advanced features like message threading, custom themes, and bot integrations.',
-      image: 'https://picsum.photos/seed/winzee/600/400.jpg',
+      id: 'instasell',
+      title: 'Instasell',
+      slug: 'instasell',
+      shortDescription: 'Instasell is a bidding-based platform that allows users to sell items quickly within a short time period.',
+      fullDescription: 'Instasell is a bidding-based web platform designed to help users sell their items in a short time frame using a competitive bid system. Sellers can list products, and buyers place bids within a limited time window, ensuring fast and fair pricing. The platform is currently under development and focuses on building a smooth bidding experience, scalable backend architecture, and a responsive user interface for future growth.',
+      image: '/app/images/instasellhome.jpeg',
       images: [
-        'https://picsum.photos/seed/winzee/800/600.jpg',
-        'https://picsum.photos/seed/winzee2/800/600.jpg',
-        'https://picsum.photos/seed/winzee3/800/600.jpg'
+        '/app/images/instasellhome.jpeg',
+        '/app/images/instasell1.jpeg',
+        '/app/images/instasell2.jpeg'
       ],
-      technologies: ['Node.js', 'Socket.io', 'Express', 'MongoDB', 'React', 'Redis', 'WebRTC', 'JWT'],
-      liveUrl: 'https://winzee-chat-demo.herokuapp.com',
-      githubUrl: 'https://github.com/karigar/winzee-chat',
+      technologies: ['Next.js', 'Tailwind CSS', 'Database', 'Node.js'],
+      liveUrl: '#',
+      githubUrl: '#',
       features: [
-        'Real-time messaging with typing indicators',
-        'File sharing with drag & drop support',
-        'Group chat functionality with admin controls',
-        'Voice and video calls using WebRTC',
-        'End-to-end encryption for security',
-        'Message threading and replies',
-        'Custom emoji reactions',
-        'Bot integrations and commands'
-      ]
-    },
-    {
-      id: 'chatgpt-clone',
-      title: 'ChatGPT Clone',
-      slug: 'chatgpt-clone',
-      shortDescription: 'AI-powered conversational interface with advanced features',
-      fullDescription: 'A sophisticated AI chatbot interface that replicates ChatGPT functionality with enhanced features. Built with modern React and integrates with OpenAI API to provide intelligent responses. Features include conversation history, multiple chat sessions, customizable themes, export functionality, and advanced prompt engineering capabilities. The interface is optimized for both casual users and power users.',
-      image: 'https://picsum.photos/seed/chatgpt/600/400.jpg',
-      images: [
-        'https://picsum.photos/seed/chatgpt/800/600.jpg',
-        'https://picsum.photos/seed/chatgpt2/800/600.jpg',
-        'https://picsum.photos/seed/chatgpt3/800/600.jpg'
-      ],
-      technologies: ['OpenAI API', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel', 'Prisma', 'PostgreSQL'],
-      liveUrl: 'https://chatgpt-clone-karigar.vercel.app',
-      githubUrl: 'https://github.com/karigar/chatgpt-clone',
-      features: [
-        'AI-powered conversations with GPT-4',
-        'Multiple chat sessions management',
-        'Conversation history with search',
-        'Export conversations to PDF/Markdown',
-        'Customizable themes and layouts',
-        'Code syntax highlighting',
-        'Image generation capabilities',
-        'Custom prompt templates'
-      ]
-    },
-    {
-      id: 'gemini-clone',
-      title: 'Gemini Clone',
-      slug: 'gemini-clone',
-      shortDescription: 'Google AI assistant interface with modern design and features',
-      fullDescription: 'A modern recreation of Google Gemini AI interface with enhanced features and capabilities. Provides intelligent responses, image analysis capabilities, and multi-modal interactions. Built with cutting-edge web technologies and optimized for performance and user experience. Includes advanced features like document analysis, code generation, and creative writing assistance.',
-      image: 'https://picsum.photos/seed/gemini/600/400.jpg',
-      images: [
-        'https://picsum.photos/seed/gemini/800/600.jpg',
-        'https://picsum.photos/seed/gemini2/800/600.jpg',
-        'https://picsum.photos/seed/gemini3/800/600.jpg'
-      ],
-      technologies: ['Google AI', 'React', 'Tailwind CSS', 'Vite', 'Firebase', 'Cloud Functions', 'TypeScript'],
-      liveUrl: 'https://gemini-clone-karigar.web.app',
-      githubUrl: 'https://github.com/karigar/gemini-clone',
-      features: [
-        'Multi-modal AI interactions (text, image, voice)',
-        'Advanced image analysis and description',
-        'Voice input with speech recognition',
-        'Document analysis and summarization',
-        'Code generation and explanation',
-        'Creative writing assistance',
-        'Real-time collaboration features',
-        'Mobile-optimized responsive design'
+        'Time-based bidding system for quick selling',
+        'Simple and fast item listing process',
+        'Competitive bidding mechanism',
+        'Responsive web interface',
+        'Scalable architecture (under development)'
       ]
     }
   ]
@@ -334,11 +276,11 @@ export default function Home() {
               </div>
               <div className="about-stats">
                 <div className="about-stat">
-                  <div className="about-stat-number">5+</div>
+                  <div className="about-stat-number">1+</div>
                   <div className="about-stat-label">Years Experience</div>
                 </div>
                 <div className="about-stat">
-                  <div className="about-stat-number">50+</div>
+                  <div className="about-stat-number">2</div>
                   <div className="about-stat-label">Happy Clients</div>
                 </div>
                 <div className="about-stat">
@@ -499,15 +441,17 @@ export default function Home() {
                       <ExternalLink size={18} />
                       <span>View Live Website</span>
                     </a>
-                    <a
-                      href={selectedProject.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="modal-button-outlined modal-button-secondary"
-                    >
-                      <Code size={18} />
-                      <span>View Source Code</span>
-                    </a>
+                    {selectedProject.githubUrl && (
+                      <a
+                        href={selectedProject.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="modal-button-outlined modal-button-secondary"
+                      >
+                        <Code size={18} />
+                        <span>View Source Code</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
